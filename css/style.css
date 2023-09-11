@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+body{
+    background-color: aqua;
+    margin: 0px;
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#calculadora{
+    background-color:darkgray;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+#calculadora > p{
+    font-size: .8em;
+    padding-left: 0.2em;
+}
+
+/* interacao aritmetica */
+
+#interacaoCal{
+    height: 100px;
+    text-align: right;
+}
+
+#operacao-anterior, #operacao-atual{
+    min-width: 1,6;
+    padding: 0.2em;
+    overflow-wrap: break-word; /* faz com que o conteudo nao ultrapasse o container  */
+}
+
+#operacao-atual{
+    font-size: 3em;
+}
+/* botoes */
+
+#botoes{
+    display: grid; /* criacao do grid */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* criado 4 colunas */
+    gap: 3px; /* espaco entre os grids */
+    padding: 3px;
+
+}
+#botoes button{
+    border: 1p solid transparent;
+    border: 0px;
+    height: 4em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#botoes button:hover{
+    background-color: aquamarine;
+}
+
+#igual{
+    grid-column: span 2;
+}
+
+
+
